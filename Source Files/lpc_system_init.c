@@ -49,7 +49,7 @@ void System_Init(void)
  **********************************************************************/
 void Port_Init(void)
 {
-	GPIO_SetDir(3, _BIT(25), 1);      // Set HeartBeat Led P3.25 to Output
+	GPIO_SetDir(3, _BIT(25), 1);      // Set P3.25 to Output
 	GPIO_SetDir(1, _SBF(18,0xFF), 1); //Set P1.18 to P1.25 as output
 	GPIO_SetValue(1,_SBF(18,0xFF));   //Clear P1.18 to P1.25
 }
